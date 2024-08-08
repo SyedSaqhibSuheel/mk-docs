@@ -1,0 +1,954 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>WebSequence - Code2Diagram</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#websequence" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Code2Diagram" class="md-header__button md-logo" aria-label="Code2Diagram" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Code2Diagram
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              WebSequence
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Architecture Diagram
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  WebSequence
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Code2Diagram" class="md-nav__button md-logo" aria-label="Code2Diagram" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Code2Diagram
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Architecture Diagram
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    WebSequence
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    WebSequence
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-websequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of WebSequence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dsl-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      DSL Basics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How It Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features-and-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features and Syntax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Features and Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#participants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Participants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Messages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#titles-and-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Titles and Labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#practical-uses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Uses
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="websequence"><strong>WebSequence</strong></h1>
+<p>WebSequence is part of the Code2Diagram tool, designed for creating sequence diagrams using a Domain-Specific Language (DSL). These diagrams illustrate the interactions between participants over time, making it easier to visualize complex processes, protocols, and workflows.</p>
+<h2 id="benefits-of-websequence"><strong>Benefits of WebSequence</strong></h2>
+<ul>
+<li><strong>Simplicity</strong>: WebSequence uses a straightforward, text-based DSL, making it accessible even to those without extensive graphical design skills.</li>
+<li><strong>Cross-Platform</strong>: The tool can run in both Node.js environments and browsers, providing flexibility in usage.</li>
+<li><strong>Ease of Integration</strong>: It can be easily integrated into web projects, documentation systems, and other software tools.</li>
+<li><strong>Customization</strong>: Users can customize diagrams to match their specific needs, adjusting elements like colors, fonts, and participant roles.</li>
+<li><strong>Exportability</strong>: Diagrams created with WebSequence can be exported in various formats such as SVG, making them easy to share and embed in different platforms.</li>
+</ul>
+<h2 id="dsl-basics"><strong>DSL Basics</strong></h2>
+<p>Comments begin with a # and end at the next newline:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># This is a comment
+</code></pre></div>
+Meta data can be provided with particular keywords:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>title &quot;My title here&quot;
+</code></pre></div>
+Quoting strings is usually optional, for example these are the same:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>title &quot;My title here&quot;
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>title My title here
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>title &quot;My title&quot; here
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>title &quot;My&quot; &quot;title&quot; &quot;here&quot;
+</code></pre></div>
+<p>This is an websequence diagram for all the above code:</p>
+<p><img alt="Alt text" src="../images/webImage20.png" /></p>
+<p>Each non-metadata line represents a step in the sequence, in order.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># Draw an arrow from agent &quot;Foo Bar&quot; to agent &quot;Zig Zag&quot; with a label:
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a># (implicitly creates the agents if they do not already exist)
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Foo Bar -&gt; Zig Zag: Do a thing
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a># With quotes, this is the same as:
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>&quot;Foo Bar&quot; -&gt; &quot;Zig Zag&quot;: &quot;Do a thing&quot;
+</code></pre></div>
+<p>This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage21.png" /></p>
+<p>Blocks surround steps, and can nest:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>if something
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  Foo -&gt; Bar
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>else if something else
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  Foo -&gt; Baz
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  if more stuff
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    Baz -&gt; Zig
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  end
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>end
+</code></pre></div>
+This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage22.png" /></p>
+<h2 id="how-it-works"><strong>How It Works</strong></h2>
+<p>WebSequence operates by interpreting text-based descriptions of sequence diagrams written in its DSL. Users define participants and their interactions using this language, and WebSequence renders these descriptions into visual diagrams.</p>
+<h3 id="key-features-and-syntax"><strong>Key Features and Syntax</strong></h3>
+<h4 id="participants"><strong>Participants</strong></h4>
+<p>Participants are the entities involved in the interaction, such as users, systems, or components.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Alice -&gt; Bob: Hello Bob, how are you?
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Bob -&gt; Alice: I&#39;m good, thanks!
+</code></pre></div>
+<p>This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage1.png" /></p>
+<h4 id="messages"><strong>Messages</strong></h4>
+<p>Messages represent interactions between participants, indicated by arrows (<code>-&gt;</code>).</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>User -&gt; Server: Request
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>Server -&gt; User: Response
+</code></pre></div>
+This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage2.png" /></p>
+<h4 id="notes"><strong>Notes</strong></h4>
+<p>Notes provide additional context or explanations within the diagram.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>note right of User: User initiates the request
+</code></pre></div>
+This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage3.png" /></p>
+<h4 id="titles-and-labels"><strong>Titles and Labels</strong></h4>
+<p>Diagrams can have titles for better clarity.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>title Authentication Process
+</code></pre></div>
+This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage4.png" /></p>
+<h4 id="customization"><strong>Customization</strong></h4>
+<p>Various attributes can be adjusted to change the appearance and style of the diagrams.</p>
+<h2 id="examples"><strong>Examples</strong></h2>
+<p>Here's an example description using WebSequence:</p>
+<p><strong>Simple Usage</strong></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>title Labyrinth
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>Bowie -&gt; Goblin: You remind me of the babe
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>Goblin -&gt; Bowie: What babe?
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>Bowie -&gt; Goblin: The babe with the power
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>Goblin -&gt; Bowie: What power?
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>note right of Bowie, Goblin: Most people get muddled here!
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>Bowie -&gt; Goblin: &quot;The power of voodoo&quot;
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>Goblin -&gt; Bowie: &quot;Who-do?&quot;
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>Bowie -&gt; Goblin: You do!
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>Goblin -&gt; Bowie: Do what?
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>Bowie -&gt; Goblin: Remind me of the babe!
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>Bowie -&gt; Audience: Sings
+</code></pre></div>
+This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage5.png" /></p>
+<p><strong>Connection Types</strong></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>title Connection Types
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>begin Foo, Bar, Baz
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>Foo -&gt; Bar: Simple arrow
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>Bar --&gt; Baz: Dashed arrow
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>Foo &lt;- Bar: Reversed arrow
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>Bar &lt;-- Baz: Reversed &amp; dashed
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>Foo &lt;-&gt; Bar: Double arrow
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>Bar &lt;--&gt; Baz: Double dashed arrow
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a># An arrow with no label:
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>Foo -&gt; Bar
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>Bar -&gt;&gt; Baz: Different arrow
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>Foo &lt;&lt;--&gt; Bar: Mix of arrows
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>Bar -&gt; Bar: Bar talks to itself
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>Foo -&gt; +Bar: Foo asks Bar
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>-Bar --&gt; Foo: and Bar replies
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>Bar -x Baz: Lost message
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a># Arrows leaving on the left and right of the diagram
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>[ -&gt; Foo: From the left
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>[ &lt;- Foo: To the left
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>Foo -&gt; ]: To the right
+<a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>Foo &lt;- ]: From the right
+<a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>[ ~&gt; ]: Wavy left to right!
+<a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a># (etc.)
+</code></pre></div>
+This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage6.png" /></p>
+<p><strong>Dividers</strong></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>title Dividers
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>begin Foo, Bar, Baz
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>Foo -&gt; +Bar
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>divider
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>Bar -&gt; +Baz
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>divider delay: This takes a while
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>-Baz --&gt; Bar
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>divider tear with height 20: Lots of stuff happens
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>-Bar --&gt; Foo
+</code></pre></div>
+This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage19.png" /></p>
+<p><strong>Notes &amp; State</strong></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>title Note Placements
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>begin Foo, Bar
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>note over Foo: Foo says something
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>note left of Foo: Stuff
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>note right of Bar: More stuff
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>note over Foo, Bar: &quot;Foo and Bar
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>on multiple lines&quot;
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>note between Foo, Bar: Link
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a># in long diagrams, we can add reminders of which agent is which:
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>relabel
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>text right: &quot;Comments\nOver here!&quot;
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>state over Foo: Foo is ponderous
+</code></pre></div>
+This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage7.png" /></p>
+<p><strong>Logic</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>title At the Bank
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>begin Person, ATM, Bank
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>Person -&gt; ATM: Request money
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>ATM -&gt; Bank: Check funds
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>if fraud detected
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>  Bank -&gt; Police: &quot;Get &#39;em!&quot;
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>  Police -&gt; Person: &quot;You&#39;re nicked&quot;
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>  end Police
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>else if sufficient funds
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>  ATM -&gt; Bank: Withdraw funds
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>  repeat until &quot;all requested money
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>                has been handed over&quot;
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>    ATM -&gt; Person: Dispense note
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>  end
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>else
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>  ATM -&gt; Person: Error
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>end
+</code></pre></div>
+<p>This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage8.png" /></p>
+<p><strong>Label Templates</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>autolabel &quot;[&lt;inc&gt;] &lt;label&gt;&quot;
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>begin &quot;Underpants\nGnomes&quot; as A
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>A &lt;- ]: Collect underpants
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>A &lt;-&gt; ]: ???
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>A &lt;- ]: Profit!
+</code></pre></div>
+<p>This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage9.png" /></p>
+<p><strong>Multiline Text</strong></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>title &quot;My Multiline
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>Title&quot;
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>begin Foo, Bar
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>note over Foo: &quot;Also possible\nwith escapes&quot;
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>Foo -&gt; Bar: &quot;Lines of text\non this arrow&quot;
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>if &quot;Even multiline\ninside conditions like this&quot;
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>  Foo -&gt; &quot;Multiline\nagent&quot;
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>end
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>state over Foo: &quot;Newlines here,
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>too!&quot;
+</code></pre></div>
+This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage10.png" /></p>
+<p><strong>Themes</strong></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>theme sketch
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>title Mockup
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>A thing -&gt; +Another thing: Something happens
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>-Another thing --&gt; A thing: With some response
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>note right of Another thing: Find out what happens here
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>end Another thing
+</code></pre></div>
+This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage11.png" /></p>
+<p><strong>Short-Lived Agents</strong></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>title &quot;Baz doesn&#39;t live long&quot;
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>note over Foo, Bar: Using begin / end
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>begin Baz
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>Bar -&gt; Baz
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>Baz -&gt; Foo
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>end Baz
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>note over Foo, Bar: Using * / !
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a># * and ! cause agents to be
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a># created and destroyed inline
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>Bar -&gt; *Baz: make Baz
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>Foo &lt;- !Baz: end Baz
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a># Foo and Bar end with black bars
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a>terminators bar
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a># (options are: box, bar, cross, fade, none)
+</code></pre></div>
+This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage12.png" /></p>
+<p><strong>Agent Aliases</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>define My complicated agent name as A
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>define &quot;Another agent name,
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>and this one&#39;s multi-line!&quot; as B
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>A -&gt; B: this is much easier
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>A &lt;- B: than writing the whole name
+</code></pre></div>
+<p>This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage13.png" /></p>
+<p><strong>Markdown</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>define &quot;Name with
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>**bold** and _italic_&quot; as A
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>define &quot;Also `code`
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>and ~strikeout~&quot; as B
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>A -&gt; B: &quot;_**basic markdown
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>is supported!**_&quot;
+</code></pre></div>
+<p>This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage14.png" /></p>
+<p><strong>Alternative Agent Ordering</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>define Baz, Foo
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>Foo -&gt; Bar
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>Bar -&gt; Baz
+</code></pre></div>
+<p>This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage15.png" /></p>
+<p><strong>Agent Types</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>begin User, Application, PostgreSQL
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>User -&gt; +Application
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>Application -&gt; +PostgreSQL
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>-PostgreSQL --&gt; Application
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>-Application --&gt; User
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>User is a person
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>PostgreSQL is a database
+</code></pre></div>
+<p>This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage16.png" /></p>
+<p><strong>Asynchronous Communication</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>begin Initiator as I, Receiver as R
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a># the &#39;...id&#39; syntax allows connections
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a># to span multiple lines
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>I -&gt; ...fin1
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>...fin1 -&gt; R: FIN
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a># they can even inter-mix!
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>R -&gt; ...ack1
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>R -&gt; ...fin2
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>...ack1 -&gt; I: ACK
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>...fin2 -&gt; I: FIN
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>!I -&gt; ...ack2
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a>...ack2 -&gt; !R: ACK
+</code></pre></div>
+<p>This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage17.png" /></p>
+<p><strong>Simultaneous Actions</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>begin A, B, C, D
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>A -&gt; C
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a># Define a marker which can be returned to later
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>some primary process:
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>A -&gt; B
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>B -&gt; A
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>A -&gt; B
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>B -&gt; A
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a># Return to the defined marker
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a># (should be interpreted as no-higher-then the marker; may be
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a># pushed down to keep relative action ordering consistent)
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a>simultaneously with some primary process:
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a>C -&gt; D
+<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a>D -&gt; C
+<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a>end D
+<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a>C -&gt; A
+<a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a>
+<a id="__codelineno-23-22" name="__codelineno-23-22" href="#__codelineno-23-22"></a># The marker name is optional; using &quot;simultaneously:&quot; with no
+<a id="__codelineno-23-23" name="__codelineno-23-23" href="#__codelineno-23-23"></a># marker will jump to the top of the entire sequence.
+</code></pre></div>
+<p>This is an websequence diagram for the above code:</p>
+<p><img alt="Alt text" src="../images/webImage18.png" /></p>
+<h4 id="practical-uses">Practical Uses</h4>
+<p>WebSequence is particularly useful in various scenarios such as:</p>
+<ul>
+<li><strong>Software Development:</strong> Documenting system interactions, API calls, and workflows.</li>
+<li><strong>Project Management:</strong> Visualizing process flows and task dependencies.</li>
+<li><strong>Education and Training:</strong> Teaching complex interactions in an easily digestible format.</li>
+<li><strong>Business Analysis:</strong> Mapping out business processes and customer journeys.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2024 Your Company Name. All rights reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/yourusername" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/yourusername" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
